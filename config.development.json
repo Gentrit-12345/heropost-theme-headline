@@ -2,12 +2,15 @@
   "url": "http://TheHeroPost.com/",
   "server": {
     "port": 2369,
-    "host": "10.246.160.3"
+    "host": "0.0.0.0"
   },
   "database": {
-    "client": "sqlite3",
+    "client": "mysql",
     "connection": {
-      "filename": "C:\\Users\\Pc\\Desktop\\SD-Projects\\heropost-theme-headline\\content\\data\\ghost-local.db"
+      "host": "10.246.160.3",
+      "user": "theheropost-db-user",
+      "password": "[7G;usQ5|(e6z\\C",
+      "database": "ghost"
     }
   },
   "mail": {
@@ -19,8 +22,8 @@
       "stdout"
     ]
   },
-  "process": "local",
+  "process": "production",
   "paths": {
-    "contentPath": "C:\\Users\\Pc\\Desktop\\SD-Projects\\heropost-theme-headline\\content"
+    "contentPath": "/var/www/ghost/content"
   }
 }
